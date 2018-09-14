@@ -2,7 +2,7 @@
 
 ## Description
 
-In this module you'll learn how to add, edit, and remove users within your WordPress website. This module will introduce the user roles that exist within WordPress, but will focus on the how-to of user management, and not the organizational philosophy behind deciding which users are assigned various roles and permissions.
+In this module you'll learn how to add, edit, and remove users within your WordPress website. This module will introduce the user roles that exist within WordPress, but will focus on the how-to of user management, and not the organizational philosophy behind deciding which users are assigned various roles and permissions.
 
 * * *
 
@@ -65,35 +65,39 @@ Welcome to User Management! Today you are going to learn how to add, remove, and
 
 ### Roles and Capabilities
 
-As you dig into User Management, you'll see several user Roles appear. This module doesn't dive deeply into what each of these roles are capable of, or why you should give a specific user a specific user role, but you will want to be familiar with them. The WordPress Codex describes each role briefly as:
+As you dig into User Management, you'll see several user Roles appear. This module doesn't dive deeply into what each of these roles are capable of, or why you should give a specific user a specific user role, but you will want to be familiar with them. The WordPress Codex describes each role briefly as:
 
 > **Administrator** – somebody who has access to all the administration features within a single site. **Editor** – somebody who can publish and manage posts including the posts of other users. **Author** – somebody who can publish and manage their own posts. **Contributor** – somebody who can write and manage their own posts but cannot publish them. **Subscriber** – somebody who can only manage their profile.
 
-For this lesson, the user account you access your WordPress site with should be of the "Administrator" role. For more information about the capabilities of each role type, review the complete [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities) article in the WordPress Codex.
+For this lesson, the user account you access your WordPress site with should be of the "Administrator" role. For more information about the capabilities of each role type, review the complete [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities) article in the WordPress Codex.
 
-### Users Menu
+### Users Menu
 
-To manage users you'll use tools within the Users menu on the Dashboard, along with General Settings. [![WordPress User Menu](https://make.wordpress.org/training/files/2014/12/wordpress-user-menu.png)](https://make.wordpress.org/training/files/2014/12/wordpress-user-menu.png) **Users > All Users** The All Users table is a complete listing of all users within your WordPress site, including your own user account. From the table listing, you have access to bulk actions, where you can modify multiple users at the same time. **Users > Add New** Add New allows you to manually add a new user. This is important if users are unable to register their own accounts and all new accounts are created by you or another administrator. **Users > Your Profile** Your Profile is where you can update information within your own profile. If you're instructing another logged in user to update their own profile, the same URL applies. (e.g., yourwebsite.tld/wp-admin/profile.php) **Settings > General** Within the Settings menu, General includes an option for allowing users to register their own new account. By default this option is disabled in a new WordPress installation, but if your website has many users, you may elect to enable this and only use your administrator account to promote specific users into roles with more capabilities. In the following lessons, we'll dig into each of these screens and the important tasks you can perform within them.
+To manage users you'll use tools within the Users menu on the Dashboard, along with General Settings. [![WordPress User Menu](https://make.wordpress.org/training/files/2014/12/wordpress-user-menu.png)](https://make.wordpress.org/training/files/2014/12/wordpress-user-menu.png) **Users > All Users** The All Users table is a complete listing of all users within your WordPress site, including your own user account. From the table listing, you have access to bulk actions, where you can modify multiple users at the same time. **Users > Add New** Add New allows you to manually add a new user. This is important if users are unable to register their own accounts and all new accounts are created by you or another administrator. **Users > Your Profile** Your Profile is where you can update information within your own profile. If you're instructing another logged in user to update their own profile, the same URL applies. (e.g., yourwebsite.tld/wp-admin/profile.php) **Settings > General** Within the Settings menu, General includes an option for allowing users to register their own new account. By default this option is disabled in a new WordPress installation, but if your website has many users, you may elect to enable this and only use your administrator account to promote specific users into roles with more capabilities. In the following lessons, we'll dig into each of these screens and the important tasks you can perform within them.
 
 * * *
 
-> All User tasks begin with logging into your WordPress administrative area: <pre>yourwebsite.tld/wp-admin/</pre>
+[tip]All User tasks begin with logging into your WordPress administrative area:
+
+<pre>yourwebsite.tld/wp-admin/</pre>
+
+[/tip]
 
 ## Update Your Own Profile
 
-1.  On the WordPress Toolbar hover over your username in the upper-right corner of the screen and select **Edit My Profile**, or on the User menu in the Dashboard select **Your Profile**.
-2.  Scroll down to the Name section, where you can fill in your name, nickname, contact information, biography, and profile picture.
+1.  On the WordPress Toolbar hover over your username in the upper-right corner of the screen and select **Edit My Profile**, or on the User menu in the Dashboard select **Your Profile**.
+2.  Scroll down to the Name section, where you can fill in your name, nickname, contact information, biography, and profile picture.
 
 ### Your Display Name
 
-Your display name is the name shown when browsing content on the website. It typically appears as an author attribution on posts, as well as comments on posts or pages. You may choose to display your WordPress username, any combination of your first and last name, or your specified nickname. Also note:
+Your display name is the name shown when browsing content on the website. It typically appears as an author attribution on posts, as well as comments on posts or pages. You may choose to display your WordPress username, any combination of your first and last name, or your specified nickname. Also note:
 
 *   If you've not filled in your full name in the First Name or Last Name fields, these options will not appear in the display name dropdown. Likewise, if your nickname is the same as your username, only one of the two will appear.
 *   Some themes may hide authors from posts or pages.
 
 ### Your Profile Picture
 
-By default, changing your profile picture is tied to your Gravatar account. To learn more about using Gravatar visit: [https://en.gravatar.com/](https://en.gravatar.com/)
+By default, changing your profile picture is tied to your Gravatar account. To learn more about using Gravatar visit: [https://en.gravatar.com/](https://en.gravatar.com/)
 
 ### Your Email Address
 
@@ -116,11 +120,11 @@ Your email address is required by WordPress, to support system notifications and
 By default, the new user's password will be automatically generated and hidden from you. If you need to know the user's password, or intend to create a custom password, use the Show Password button. This is an optional step and is not typically necessary in the user creation process. Also note:
 
 *   A new user will automatically be sent a welcome email by WordPress with their new login information, including the generated password. The user will be prompted to log in and to change their password to one of their liking. If you have assigned them a custom password, they will still have the ability to and will be encouraged to update their password.
-*   If you'd like to suppress the welcoming email, you may uncheck the "Send the new user an email about their account" option below. This step is not typically recommended, but may be useful if you're adding many users in preparation for a website that is not ready to be revealed to its users. Be aware, if a user has not been sent a welcoming email, they may still use their email address to recover their login credentials.
+*   If you'd like to suppress the welcoming email, you may uncheck the "Send the new user an email about their account" option below. This step is not typically recommended, but may be useful if you're adding many users in preparation for a website that is not ready to be revealed to its users. Be aware, if a user has not been sent a welcoming email, they may still use their email address to recover their login credentials.
 
 ### Role
 
-A user's role determines their abilities within the WordPress website—for example, whether they are only allowed to read content or to edit content. To learn more about user roles, review the complete [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities) article in the WordPress Codex. Also note:
+A user's role determines their abilities within the WordPress website—for example, whether they are only allowed to read content or to edit content. To learn more about user roles, review the complete [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities) article in the WordPress Codex. Also note:
 
 *   The default role of a new user will be "Subscriber," unless you've changed this preference within Settings > General > New User Default Role.
 
@@ -201,7 +205,7 @@ Also note:
 
 ## Customize the View of the Users Table
 
-To specify which columns to view on the Users table, or to change the default number of users to list per page, use the Screen Options panel in the upper-right.
+To specify which columns to view on the Users table, or to change the default number of users to list per page, use the Screen Options panel in the upper-right.
 
 1.  Click on Screen Options to open the panel.
 2.  Optionally uncheck any columns you wish to hide from the Users table.
@@ -257,7 +261,7 @@ Also note:
 3.  The user will not be able to login with their old username.
 4.  You cannot change the email on an account.
 
-**Correct Answer:** 1\. WordPress sends a "Notice of Email Change" message.
+**Correct Answer:** 1\. WordPress sends a "Notice of Email Change" message.
 
 ### If visitors are allowed to register for their own accounts, what should their default role be?
 
@@ -266,4 +270,4 @@ Also note:
 3.  Administrator
 4.  It depends on the level of engagement I'd like them to have
 
-**Correct Answer:** 4\. It depends on the level of engagement I'd like them to have (and Administrator should not be the default)
+**Correct Answer:** 4. It depends on the level of engagement I'd like them to have (and Administrator should not be the default)
