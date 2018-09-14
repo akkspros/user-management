@@ -10,13 +10,13 @@ In this module you'll learn how to add, edit, and remove users within your WordP
 
 After completing this lesson, students will be able to ...
 
-*   Update their own profile
+*   Update their own profile
 *   Customize the visible columns in the Users table
 *   Create a new user account
 *   Enable/Disable the ability for users to register their own account
 *   Use the search, filter, and batch modification tools within the users table to find and/or modify existing users
 *   Add and remove permissions (via Roles and Capabilities) for individual users
-*   Reset a user's password
+*   Reset a user's password
 *   Disable a user without deleting them
 *   Delete a user
 *   Reassign a deleted user's content to another user
@@ -25,36 +25,36 @@ After completing this lesson, students will be able to ...
 
 ## Prerequisite Skills
 
-*   Basic familiarity with the [WordPress administrative Dashboard](https://en.support.wordpress.com/dashboard/)
+*   Basic familiarity with the [WordPress administrative Dashboard](https://en.support.wordpress.com/dashboard/)
 
 * * *
 
 ## Assets
 
-*   A user account with the "Administrator" Role
+*   A user account with the "Administrator" Role
 
 * * *
 
 ## Screening Questions
 
-*   Are you familiar with the WordPress administrative Dashboard?
+*   Are you familiar with the WordPress administrative Dashboard?
 *   Do you understand the need for user accounts and security with shared technology?
-*   Are you familiar with the roles of subscribers, authors, and editors in a publishing process?
+*   Are you familiar with the roles of subscribers, authors, and editors in a publishing process?
 
 * * *
 
 ## Teacher Notes
 
-*   Performing a live demo while teaching the steps to manage users is crucial to having the material “click” for students.
-*   While a sandboxed site is not necessary for this lesson, it is recommended. Ideally, students would not be modifying permissions or adding and removing real users from an actively used website.
-*   This lesson is best suited for a WordPress site that doesn't have plugins for advanced user management installed—for example, any plugins for adding custom roles and capabilities.
-*   This lesson does not cover the "Super Admin" role used in the [Network Admin Screen](https://codex.wordpress.org/Super_Admin_Menu).
+*   Performing a live demo while teaching the steps to manage users is crucial to having the material “click” for students.
+*   While a sandboxed site is not necessary for this lesson, it is recommended. Ideally, students would not be modifying permissions or adding and removing real users from an actively used website.
+*   This lesson is best suited for a WordPress site that doesn't have plugins for advanced user management installed—for example, any plugins for adding custom roles and capabilities.
+*   This lesson does not cover the "Super Admin" role used in the [Network Admin Screen](https://codex.wordpress.org/Super_Admin_Menu).
 
 * * *
 
 ## Hands-on Walkthrough
 
-### Introduction: What is User Management
+### Introduction: What is User Management
 
 Welcome to User Management! Today you are going to learn how to add, remove, and update user accounts within your WordPress website, including a couple advanced topics like changing a user's username. User management is important and useful for a few reasons:
 
@@ -138,65 +138,65 @@ Sometimes, it is necessary to change an existing user's role within WordPress. C
 Update a user's role by locating their profile within the Users table.
 
 1.  On the User menu in the Dashboard select **All Users**.
-2.  In the Users table, a user can be found using the Search Users function, by browsing through the list of users manually, or by filtering the list of users by role. To filter by role, click on the appropriate role above the Users table. You may see Administrator, Subscriber, and other roles.
-3.  When the user is located, click on the user's name to edit their profile, or hover over their name and click Edit below.
-4.  On the profile editing screen, scroll down to the Role dropdown to choose a new role for the user.
+2.  In the Users table, a user can be found using the Search Users function, by browsing through the list of users manually, or by filtering the list of users by role. To filter by role, click on the appropriate role above the Users table. You may see Administrator, Subscriber, and other roles.
+3.  When the user is located, click on the user's name to edit their profile, or hover over their name and click Edit below.
+4.  On the profile editing screen, scroll down to the Role dropdown to choose a new role for the user.
 5.  At the bottom of the page, use the Update User button to apply any changes.
 
-[alert]You can't downgrade or otherwise restrict access to your own administrator account while logged into that account. To modify your own administrator account, you'll need to create a new administrator account or use another existing administrator account to log in and downgrade or otherwise change the permissions of your administrator account.[/alert]
+[alert]You can't downgrade or otherwise restrict access to your own administrator account while logged into that account. To modify your own administrator account, you'll need to create a new administrator account or use another existing administrator account to log in and downgrade or otherwise change the permissions of your administrator account.[/alert]
 
-### Disable an Existing User by Downgrading Their Role
+### Disable an Existing User by Downgrading Their Role
 
 To disable a user without deleting them from the users list, follow the steps for changing a user's role, but select "No role for this site" as the new role. This role will still allow logging into the WordPress site, though they will not be able to access the administrative area, effectively freezing their account and access to their content, which will still exist on the website. Note that:
 
 *   When the user's email address is changed, they will receive an automated "Notice of Email Change" message via email. This message will not reveal the new email address, though the user will become aware of their account being disabled.
-*   To fully prevent account access, you would need to change the user's email address and password. While changing the password temporarily prevents them from logging in, changing the email address will prevent them from regaining access to their account through the password recovery process.
+*   To fully prevent account access, you would need to change the user's email address and password. While changing the password temporarily prevents them from logging in, changing the email address will prevent them from regaining access to their account through the password recovery process.
 
 ### Changing the Role of Multiple Users
 
 From the Users table, you may choose to modify the role of multiple users. This is possible using the checkboxes to the left of each user in the list of users.
 
-1.  Select the checkboxes next to any users for whom you would like to change the role.
-2.  Use the "Change role to" button above to select a new role for these users.
-3.  Click the Change button to the right of the selected role to apply the change.
+1.  Select the checkboxes next to any users for whom you would like to change the role.
+2.  Use the "Change role to" button above to select a new role for these users.
+3.  Click the Change button to the right of the selected role to apply the change.
 
-## Delete an Existing User and Reassign Their Content to Another User
+## Delete an Existing User and Reassign Their Content to Another User
 
 When removing a user from your WordPress website, you'll need to decide what to do with any content they've authored, including posts, pages, comments, or other content types.
 
 1.  Locate the user to be removed, hover over their username, and click Delete.
 2.  On the next screen, confirm the deletion.
 
-[alert]You won't be able to delete your own administrator account while logged into your administrator account. To delete your own administrator account, you'll need to create a new administrator account or use another existing administrator account to log in and delete your administrator account.[/alert]
+[alert]You won't be able to delete your own administrator account while logged into your administrator account. To delete your own administrator account, you'll need to create a new administrator account or use another existing administrator account to log in and delete your administrator account.[/alert]
 
 ### Reassigning a User's Content to Another User
 
-If the user being deleted has content associated with their account, you'll want to determine how to reassign their content to another user as author. As part of the deletion screen, you have two options:
+If the user being deleted has content associated with their account, you'll want to determine how to reassign their content to another user as author. As part of the deletion screen, you have two options:
 
 *   **Delete all content** – This option removes any pages, posts, or comments this user has created. This option is less common in most situations.
-*   <label for="delete_option1">**Attribute all content to [another user]** – This option allows you to choose another user within your WordPress website to attribute this content to instead. choosing this option will change the author of pages and posts from the deleted user to the user you select in the provided dropdown.</label>
+*   <label for="delete_option1">**Attribute all content to [another user]** – This option allows you to choose another user within your WordPress website to attribute this content to instead. choosing this option will change the author of pages and posts from the deleted user to the user you select in the provided dropdown.</label>
 
 ### Bulk Deletion of Users
 
 Just as you have the ability to change the role of multiple users from the Users table, you also have the ability to delete multiple users and to assign all of their content to another single user.
 
-1.  From the Users table, select the checkboxes next to each user in the list you'd like to delete. (You can't delete your own user account.)
-2.  With the Bulk Actions button at the top of the Users table, select Delete from the dropdown.
-3.  Click the Apply button to be brought to the delete screen with any applicable options.
+1.  From the Users table, select the checkboxes next to each user in the list you'd like to delete. (You can't delete your own user account.)
+2.  With the Bulk Actions button at the top of the Users table, select Delete from the dropdown.
+3.  Click the Apply button to be brought to the delete screen with any applicable options.
 4.  Click the Confirm Deletion button to apply changes.
 
 You may be presented with the options to reassign all content to an existing user. This option will apply your selection to all users you've marked for deletion. If you'd like to assign different users' content to different existing users, you'll need to select each grouping as it's own bulk action. For example, select some users to delete and assign their content to User A. Then return to the Users table and select other users to delete and assign their content to User B.
 
 ## Reset a User's Password, Including Your Own
 
-To manually reset a user's password, or to change your own, follow the same steps as editing a user's profile. You may choose to change a user's password at any time.
+To manually reset a user's password, or to change your own, follow the same steps as editing a user's profile. You may choose to change a user's password at any time.
 
-1.  Locate a user to edit in the Users table.
+1.  Locate a user to edit in the Users table.
 2.  Click the username or hover over the username to click on the Edit link.
-3.  Scroll down to the password area and click the Generate Password button to be given a new random password.
-4.  Optionally, you may customize this password by placing your cursor into the password field and typing another password.
-5.  If your new password is flagged as Very Weak or Weak, then the password is too simple and may pose a security risk. To use a Weak password, you need to enable the Confirm Password option. For best security practices, a Strong password is highly recommended.
-6.  Click Update User to save your new password.
+3.  Scroll down to the password area and click the Generate Password button to be given a new random password.
+4.  Optionally, you may customize this password by placing your cursor into the password field and typing another password.
+5.  If your new password is flagged as Very Weak or Weak, then the password is too simple and may pose a security risk. To use a Weak password, you need to enable the Confirm Password option. For best security practices, a Strong password is highly recommended.
+6.  Click Update User to save your new password.
 
 Also note:
 
@@ -218,7 +218,7 @@ You can update the Screen Options at any time to reveal hidden columns or update
 
 It is possible to give visitors to your website the ability to register their own accounts, to minimize the need for you to create new users.
 
-1.  On the Dashboard go to Settings > General.
+1.  On the Dashboard go to Settings > General.
 2.  On the General Settings page, scroll down to Membership.
 3.  Check the box for the "Anyone can register" option.
 4.  Scroll to the bottom of the page and click Save Changes.
@@ -230,7 +230,7 @@ Also note:
 *   If you're logged into WordPress with any account, including your own, you will not see the Register link presented on the website when previewing the website. To look for the "Register" link, either log out of your account, or browse to your WordPress website within another browser where you are not already logged into your account.
 *   If you allow users to register their own accounts, it is recommended for the default user role to be "Subscriber," unless new users should be allowed to create content within your WordPress website.
 
-[warning]Do not allow new users to be automatically assigned an administrator role, as they would be able to disable or delete your administrator account.[/warning]
+[warning]Do not allow new users to be automatically assigned an administrator role, as they would be able to disable or delete your administrator account.[/warning]
 
 * * *
 
@@ -243,20 +243,20 @@ Also note:
 3.  Manager
 4.  Any authorized account
 
-**Correct Answer:** 2. Administrator
+**Correct Answer:** 2\. Administrator
 
-### Which one of the following statements is _false_?
+### Which one of the following statements is _false_?
 
 1.  An editor can manage the pages and posts of other users.
 2.  You can delete a user account and assign their posts and pages to another user.
 3.  You cannot change the display name of your account on posts and pages.
 4.  You can force a reset of a user's password.
 
-**Correct Answer:** 3\. You cannot change the display name of your account on posts and pages.
+**Correct Answer:** 3\. You cannot change the display name of your account on posts and pages.
 
 ### What happens if you change the email address for a user account?
 
-1.  WordPress sends a "Notice of Email Change" message.
+1.  WordPress sends a "Notice of Email Change" message.
 2.  The username will be changed to match the email account.
 3.  The user will not be able to login with their old username.
 4.  You cannot change the email on an account.
