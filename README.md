@@ -243,7 +243,7 @@ Also note:
 3.  Manager
 4.  Any authorized account
 
-**Correct Answer:** 2\. Administrator
+**Answer:** 2. Administrator
 
 ### Which one of the following statements is _false_?
 
@@ -252,7 +252,7 @@ Also note:
 3.  You cannot change the display name of your account on posts and pages.
 4.  You can force a reset of a user's password.
 
-**Correct Answer:** 3\. You cannot change the display name of your account on posts and pages.
+**Answer:** 3. You cannot change the display name of your account on posts and pages.
 
 ### What happens if you change the email address for a user account?
 
@@ -261,7 +261,7 @@ Also note:
 3.  The user will not be able to login with their old username.
 4.  You cannot change the email on an account.
 
-**Correct Answer:** 1\. WordPress sends a "Notice of Email Change" message.
+**Answer:** 1. WordPress sends a "Notice of Email Change" message.
 
 ### If visitors are allowed to register for their own accounts, what should their default role be?
 
@@ -270,4 +270,4 @@ Also note:
 3.  Administrator
 4.  It depends on the level of engagement I'd like them to have
 
-**Correct Answer:** 4. It depends on the level of engagement I'd like them to have (and Administrator should not be the default)
+**Answer:** 4. It depends on the level of engagement I'd like them to have (and Administrator should not be the default)
