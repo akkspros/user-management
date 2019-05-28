@@ -272,3 +272,10 @@ Also note:
 4.  It depends on the level of engagement I'd like them to have
 
 **Answer:** 4. It depends on the level of engagement I'd like them to have (and Administrator should not be the default)
+
+### Can we show content based on specific user role?
+
+1.  Yes
+2.  No
+
+**Answer:** 1.Yes
